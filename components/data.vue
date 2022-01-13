@@ -1,16 +1,13 @@
 <template>
-  <div>get good</div>
+  
 </template>
 
 <script>
-import ProductList from './components/ProductList.vue'
-
-
 
 export default {
 
-data(){return{
-   products: [
+prop:{
+    products: [
   {
     productId: 1000,
     productName: 'delightful chocolate Ilise',
@@ -84,11 +81,9 @@ data(){return{
     rating: 4
   }
 ]
-}}
- 
 }
 
-
+}
 </script>
 
 <style>
