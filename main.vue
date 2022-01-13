@@ -1,13 +1,16 @@
 <template>
-  <div>get good</div>
+  <ProductList v-bind:products="products" />
 </template>
 
 <script>
 import ProductList from './components/ProductList.vue'
 
 
-
 export default {
+
+components:{
+ProductList
+},
 
 data(){return{
    products: [

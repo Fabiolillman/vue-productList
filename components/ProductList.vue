@@ -1,15 +1,22 @@
 <template>
   
+    <div>
+      <ProductCard  v-for="product in products" v-bind:key="product.productId" ProductList v-bind:products="products">
+        
+      </ProductCard>
+    </div>
+
+     
 </template>
 
 <script>
 
-import ProductList from './components/ProductCard.vue'
+import ProductCard from './ProductCard.vue'
 
 export default {
    
-    props:['products']
-
+  props:['products'],
+  components: {ProductCard}
 
 
 }

@@ -1,25 +1,21 @@
 <template>
-<div class="card-container">
-  <div v-for="product in products" v-bind:key="product.productId" class="card-box">  
-      <img v-bind:src="{{product.productImage}}">
+ 
+    <div class="card-box">  
+      <img v-bind:src="product.productImage">
       <h1>{{product.productName}}</h1>
       <p>{{product.productStock}}</p>
       <p>{{product.productPrice}}</p>
       <p>{{product.productSalePrice}}</p>
       <p>{{product.rating}}</p>
-  </div>
+    
   </div>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
-      props:['products']
-    }
+ props:['product']
   }
 
-}
 </script>
 
 <style scoped>
